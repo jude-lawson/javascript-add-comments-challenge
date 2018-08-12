@@ -2,6 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="main.css">
+  <meta charset='utf-8'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="addComment.js"></script>
   <title>Add Comments</title>
@@ -23,6 +24,11 @@
     </ul>
 
     <button id="new_comment_button">New Comment</button>
+    <form id='new_comment' class='hidden'>
+      <textarea id='comment_text'></textarea>
+      <input type='text' id='author_name' />
+      <input type='submit' value='Submit Comment' />
+    </form>
   </div>
 </body>
 </html>
